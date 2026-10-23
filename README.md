@@ -93,6 +93,19 @@ report. For normal work use `tar_make()` so changed inputs and analysis code
 are rebuilt first. After a text edit, save and rerun; only the report should
 rebuild. Ordinary text changes do not require `renv::snapshot()`.
 
+## Reproduce in R Studio on Mac
+Run
+```
+library(targets)
+library(renv)
+# Install packages
+renv::install()
+# Run targets
+tar_make()
+# Visualise targets
+tar_visnetwork()
+``` 
+
 ## Workflow and interpretation
 
 File targets register all five source files. Functions reshape and validate
