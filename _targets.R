@@ -2,7 +2,7 @@ library(targets)
 library(tarchetypes)
 
 tar_option_set(
-  packages = c("dplyr", "tidyr", "ggplot2", "sf", "terra")
+  packages = c("dplyr", "tidyr", "ggplot2", "sf", "terra", "quarto")
 )
 
 source("R/functions.R")
