@@ -114,26 +114,34 @@ Code uses indented blocks: each target is written across multiple lines,
 long calls have one argument per line, and conditional summaries use braces.
 The report's R chunks use the same style. Short, simple calls remain compact.
 
-## GitHub: wait until content review is finished
+## GitHub repository and updates
 
-Git is initialized locally on `main`. Nothing has been published and no remote
-is configured. After the report is approved, review the publishable files:
+The project is hosted at
+[YiyaoChen16/bio940-grouse-harvest](https://github.com/YiyaoChen16/bio940-grouse-harvest).
+The local `main` branch tracks `origin/main`.
+
+After editing and saving files, rebuild the report and review the changes
+before committing and pushing:
 
 ```powershell
+Rscript -e 'targets::tar_make()'
 git status --short
 git add .
 git diff --cached --stat
 git diff --cached
-git commit -m "Add reproducible grouse landscape analysis"
+git commit -m "Update report"
+git push
 ```
 
-Create an **empty** GitHub repository, without prefilled files, then replace
-the placeholder below with its URL:
+Use a commit message that describes the actual change. A classmate can obtain
+the project with:
 
 ```powershell
-git remote add origin https://github.com/YOUR-USERNAME/bio940-grouse-harvest.git
-git push -u origin main
+git clone https://github.com/YiyaoChen16/bio940-grouse-harvest.git
+cd bio940-grouse-harvest
 ```
+
+Then follow the software setup and reproduction instructions above.
 
 Sign in through Git's credential manager if requested; do not save tokens in
 project files. If needed, set your own Git author name/email locally before

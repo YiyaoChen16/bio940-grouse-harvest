@@ -298,7 +298,8 @@ measurements at matched spatial scales before estimating causal effects.
 The `targets` pipeline tracks source CSVs, the map file, cleaning, summaries,
 four figures and this Quarto report. `renv.lock` records package versions;
 Quarto is installed separately. See `README.md` for the Windows/VS Code setup.
-The GitHub repository has not been published.
+The project is available on GitHub:
+[YiyaoChen16/bio940-grouse-harvest](https://github.com/YiyaoChen16/bio940-grouse-harvest).
 
 ::: {.callout-tip appearance="simple"}
 Edit the ordinary paragraphs in `report.qmd`, save the file, then run

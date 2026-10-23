@@ -56,4 +56,7 @@ replace it with a manually typed result. Cite a paper with `[@kvasnes2018]`;
 the key must match an entry in `references.bib`.
 
 Changing text does not require installing packages or running
-`renv::snapshot()`. GitHub publication is a separate step after content review.
+`renv::snapshot()`. After rebuilding and reviewing the report, commit and push
+the updated source and generated output to the
+[GitHub repository](https://github.com/YiyaoChen16/bio940-grouse-harvest).
+See the update commands in `README.md`.
