@@ -1,0 +1,139 @@
+municipality,region_code,year,class_code,land_cover,area_km2
+Trysil,0428,2018,01,Residential areas,2.95
+Trysil,0428,2018,02,Recreational facilities,6.85
+Trysil,0428,2018,03,Built-up areas for agriculture and fishing,3.13
+Trysil,0428,2018,04,"Industrial, commercial and service areas",1.7
+Trysil,0428,2018,05,Education and day care facilities,0.07
+Trysil,0428,2018,06,Health and social welfare institutions,0.03
+Trysil,0428,2018,07,Cultural and religious activities,0.1
+Trysil,0428,2018,08-09,"Transport, telecommunications and technical infrastructure",21.63
+Trysil,0428,2018,10-11,Emergency and defence services,0
+Trysil,0428,2018,12-13,Green areas and sports facilities,5.98
+Trysil,0428,2018,14,Unclassified built-up areas and related land,1.33
+Trysil,0428,2018,15-16,Agricultural land,32
+Trysil,0428,2018,17,Forest,2247.2
+Trysil,0428,2018,17.01,Coniferous forest,2093.84
+Trysil,0428,2018,17.02,Mixed forest,85.74
+Trysil,0428,2018,17.03,Deciduous forest,35.46
+Trysil,0428,2018,17.04,Unclassified forest,32.16
+Trysil,0428,2018,18,Open firm ground,297.14
+Trysil,0428,2018,19,Bogs,284.79
+Trysil,0428,2018,20,"Bare rock, gravel and blockfields",30.37
+Trysil,0428,2018,21,Permanent snow and glaciers,0
+Trysil,0428,2018,22,Inland waters,79.09
+Trysil,0428,2018,24,Unclassified undeveloped areas,0.05
+Kongsberg,0604,2018,01,Residential areas,7.6
+Kongsberg,0604,2018,02,Recreational facilities,2.13
+Kongsberg,0604,2018,03,Built-up areas for agriculture and fishing,2.38
+Kongsberg,0604,2018,04,"Industrial, commercial and service areas",2.54
+Kongsberg,0604,2018,05,Education and day care facilities,0.36
+Kongsberg,0604,2018,06,Health and social welfare institutions,0.1
+Kongsberg,0604,2018,07,Cultural and religious activities,0.15
+Kongsberg,0604,2018,08-09,"Transport, telecommunications and technical infrastructure",11.44
+Kongsberg,0604,2018,10-11,Emergency and defence services,0.34
+Kongsberg,0604,2018,12-13,Green areas and sports facilities,1.86
+Kongsberg,0604,2018,14,Unclassified built-up areas and related land,1.43
+Kongsberg,0604,2018,15-16,Agricultural land,40.13
+Kongsberg,0604,2018,17,Forest,616.4
+Kongsberg,0604,2018,17.01,Coniferous forest,603.52
+Kongsberg,0604,2018,17.02,Mixed forest,6.3
+Kongsberg,0604,2018,17.03,Deciduous forest,6.31
+Kongsberg,0604,2018,17.04,Unclassified forest,0.27
+Kongsberg,0604,2018,18,Open firm ground,15.34
+Kongsberg,0604,2018,19,Bogs,31.94
+Kongsberg,0604,2018,20,"Bare rock, gravel and blockfields",18.85
+Kongsberg,0604,2018,21,Permanent snow and glaciers,0
+Kongsberg,0604,2018,22,Inland waters,40.13
+Kongsberg,0604,2018,24,Unclassified undeveloped areas,0
+Oppdal,5021,2018,01,Residential areas,2.03
+Oppdal,5021,2018,02,Recreational facilities,3.66
+Oppdal,5021,2018,03,Built-up areas for agriculture and fishing,2.59
+Oppdal,5021,2018,04,"Industrial, commercial and service areas",2.57
+Oppdal,5021,2018,05,Education and day care facilities,0.08
+Oppdal,5021,2018,06,Health and social welfare institutions,0.04
+Oppdal,5021,2018,07,Cultural and religious activities,0.07
+Oppdal,5021,2018,08-09,"Transport, telecommunications and technical infrastructure",8.33
+Oppdal,5021,2018,10-11,Emergency and defence services,0.01
+Oppdal,5021,2018,12-13,Green areas and sports facilities,4.46
+Oppdal,5021,2018,14,Unclassified built-up areas and related land,1.14
+Oppdal,5021,2018,15-16,Agricultural land,81.02
+Oppdal,5021,2018,17,Forest,362.12
+Oppdal,5021,2018,17.01,Coniferous forest,94.11
+Oppdal,5021,2018,17.02,Mixed forest,24.01
+Oppdal,5021,2018,17.03,Deciduous forest,217.83
+Oppdal,5021,2018,17.04,Unclassified forest,26.17
+Oppdal,5021,2018,18,Open firm ground,1394.33
+Oppdal,5021,2018,19,Bogs,117.13
+Oppdal,5021,2018,20,"Bare rock, gravel and blockfields",213.6
+Oppdal,5021,2018,21,Permanent snow and glaciers,3.49
+Oppdal,5021,2018,22,Inland waters,77.47
+Oppdal,5021,2018,24,Unclassified undeveloped areas,0
+Rana,1833,2018,01,Residential areas,7.09
+Rana,1833,2018,02,Recreational facilities,1.42
+Rana,1833,2018,03,Built-up areas for agriculture and fishing,1.51
+Rana,1833,2018,04,"Industrial, commercial and service areas",8.64
+Rana,1833,2018,05,Education and day care facilities,0.26
+Rana,1833,2018,06,Health and social welfare institutions,0.14
+Rana,1833,2018,07,Cultural and religious activities,0.12
+Rana,1833,2018,08-09,"Transport, telecommunications and technical infrastructure",14.15
+Rana,1833,2018,10-11,Emergency and defence services,0.02
+Rana,1833,2018,12-13,Green areas and sports facilities,1.5
+Rana,1833,2018,14,Unclassified built-up areas and related land,0.88
+Rana,1833,2018,15-16,Agricultural land,32.83
+Rana,1833,2018,17,Forest,1009.26
+Rana,1833,2018,17.01,Coniferous forest,345.62
+Rana,1833,2018,17.02,Mixed forest,107.44
+Rana,1833,2018,17.03,Deciduous forest,363.15
+Rana,1833,2018,17.04,Unclassified forest,193.05
+Rana,1833,2018,18,Open firm ground,2240.73
+Rana,1833,2018,19,Bogs,100.41
+Rana,1833,2018,20,"Bare rock, gravel and blockfields",553.41
+Rana,1833,2018,21,Permanent snow and glaciers,226.52
+Rana,1833,2018,22,Inland waters,260.92
+Rana,1833,2018,24,Unclassified undeveloped areas,0.02
+Kautokeino,2011,2018,01,Residential areas,1.56
+Kautokeino,2011,2018,02,Recreational facilities,0.29
+Kautokeino,2011,2018,03,Built-up areas for agriculture and fishing,0.1
+Kautokeino,2011,2018,04,"Industrial, commercial and service areas",1.65
+Kautokeino,2011,2018,05,Education and day care facilities,0.09
+Kautokeino,2011,2018,06,Health and social welfare institutions,0.02
+Kautokeino,2011,2018,07,Cultural and religious activities,0.03
+Kautokeino,2011,2018,08-09,"Transport, telecommunications and technical infrastructure",5.04
+Kautokeino,2011,2018,10-11,Emergency and defence services,0.01
+Kautokeino,2011,2018,12-13,Green areas and sports facilities,0.4
+Kautokeino,2011,2018,14,Unclassified built-up areas and related land,0.13
+Kautokeino,2011,2018,15-16,Agricultural land,4.67
+Kautokeino,2011,2018,17,Forest,3534.65
+Kautokeino,2011,2018,17.01,Coniferous forest,0
+Kautokeino,2011,2018,17.02,Mixed forest,0
+Kautokeino,2011,2018,17.03,Deciduous forest,519.98
+Kautokeino,2011,2018,17.04,Unclassified forest,3014.66
+Kautokeino,2011,2018,18,Open firm ground,3858.49
+Kautokeino,2011,2018,19,Bogs,1554.63
+Kautokeino,2011,2018,20,"Bare rock, gravel and blockfields",5.21
+Kautokeino,2011,2018,21,Permanent snow and glaciers,0
+Kautokeino,2011,2018,22,Inland waters,740.23
+Kautokeino,2011,2018,24,Unclassified undeveloped areas,0.11
+Alta,2012,2018,01,Residential areas,6.08
+Alta,2012,2018,02,Recreational facilities,1.47
+Alta,2012,2018,03,Built-up areas for agriculture and fishing,1.67
+Alta,2012,2018,04,"Industrial, commercial and service areas",3.19
+Alta,2012,2018,05,Education and day care facilities,0.35
+Alta,2012,2018,06,Health and social welfare institutions,0.12
+Alta,2012,2018,07,Cultural and religious activities,0.1
+Alta,2012,2018,08-09,"Transport, telecommunications and technical infrastructure",10.77
+Alta,2012,2018,10-11,Emergency and defence services,0.26
+Alta,2012,2018,12-13,Green areas and sports facilities,0.7
+Alta,2012,2018,14,Unclassified built-up areas and related land,1.06
+Alta,2012,2018,15-16,Agricultural land,31.01
+Alta,2012,2018,17,Forest,799.81
+Alta,2012,2018,17.01,Coniferous forest,78.55
+Alta,2012,2018,17.02,Mixed forest,51.28
+Alta,2012,2018,17.03,Deciduous forest,357.93
+Alta,2012,2018,17.04,Unclassified forest,312.05
+Alta,2012,2018,18,Open firm ground,2256.54
+Alta,2012,2018,19,Bogs,83.46
+Alta,2012,2018,20,"Bare rock, gravel and blockfields",439.87
+Alta,2012,2018,21,Permanent snow and glaciers,11.27
+Alta,2012,2018,22,Inland waters,201.7
+Alta,2012,2018,24,Unclassified undeveloped areas,0

@@ -1,0 +1,265 @@
+"municipality","species","hunting_year","start_year","harvest"
+"Kongsberg","Capercaillie","2008-2009",2008,140
+"Kongsberg","Capercaillie","2009-2010",2009,90
+"Kongsberg","Capercaillie","2010-2011",2010,120
+"Kongsberg","Capercaillie","2011-2012",2011,120
+"Kongsberg","Capercaillie","2012-2013",2012,90
+"Kongsberg","Capercaillie","2013-2014",2013,80
+"Kongsberg","Capercaillie","2014-2015",2014,130
+"Kongsberg","Capercaillie","2015-2016",2015,80
+"Kongsberg","Capercaillie","2016-2017",2016,130
+"Kongsberg","Capercaillie","2017-2018",2017,160
+"Kongsberg","Capercaillie","2018-2019",2018,90
+"Kongsberg","Black grouse","2008-2009",2008,530
+"Kongsberg","Black grouse","2009-2010",2009,320
+"Kongsberg","Black grouse","2010-2011",2010,400
+"Kongsberg","Black grouse","2011-2012",2011,440
+"Kongsberg","Black grouse","2012-2013",2012,310
+"Kongsberg","Black grouse","2013-2014",2013,180
+"Kongsberg","Black grouse","2014-2015",2014,340
+"Kongsberg","Black grouse","2015-2016",2015,240
+"Kongsberg","Black grouse","2016-2017",2016,320
+"Kongsberg","Black grouse","2017-2018",2017,390
+"Kongsberg","Black grouse","2018-2019",2018,270
+"Kongsberg","Willow ptarmigan","2008-2009",2008,
+"Kongsberg","Willow ptarmigan","2009-2010",2009,
+"Kongsberg","Willow ptarmigan","2010-2011",2010,
+"Kongsberg","Willow ptarmigan","2011-2012",2011,
+"Kongsberg","Willow ptarmigan","2012-2013",2012,
+"Kongsberg","Willow ptarmigan","2013-2014",2013,
+"Kongsberg","Willow ptarmigan","2014-2015",2014,
+"Kongsberg","Willow ptarmigan","2015-2016",2015,
+"Kongsberg","Willow ptarmigan","2016-2017",2016,
+"Kongsberg","Willow ptarmigan","2017-2018",2017,
+"Kongsberg","Willow ptarmigan","2018-2019",2018,
+"Kongsberg","Rock ptarmigan","2008-2009",2008,0
+"Kongsberg","Rock ptarmigan","2009-2010",2009,
+"Kongsberg","Rock ptarmigan","2010-2011",2010,
+"Kongsberg","Rock ptarmigan","2011-2012",2011,
+"Kongsberg","Rock ptarmigan","2012-2013",2012,0
+"Kongsberg","Rock ptarmigan","2013-2014",2013,
+"Kongsberg","Rock ptarmigan","2014-2015",2014,
+"Kongsberg","Rock ptarmigan","2015-2016",2015,
+"Kongsberg","Rock ptarmigan","2016-2017",2016,
+"Kongsberg","Rock ptarmigan","2017-2018",2017,0
+"Kongsberg","Rock ptarmigan","2018-2019",2018,
+"Trysil","Capercaillie","2008-2009",2008,1040
+"Trysil","Capercaillie","2009-2010",2009,1060
+"Trysil","Capercaillie","2010-2011",2010,1790
+"Trysil","Capercaillie","2011-2012",2011,1140
+"Trysil","Capercaillie","2012-2013",2012,390
+"Trysil","Capercaillie","2013-2014",2013,460
+"Trysil","Capercaillie","2014-2015",2014,610
+"Trysil","Capercaillie","2015-2016",2015,140
+"Trysil","Capercaillie","2016-2017",2016,390
+"Trysil","Capercaillie","2017-2018",2017,760
+"Trysil","Capercaillie","2018-2019",2018,1330
+"Trysil","Black grouse","2008-2009",2008,1430
+"Trysil","Black grouse","2009-2010",2009,1590
+"Trysil","Black grouse","2010-2011",2010,2350
+"Trysil","Black grouse","2011-2012",2011,1640
+"Trysil","Black grouse","2012-2013",2012,460
+"Trysil","Black grouse","2013-2014",2013,540
+"Trysil","Black grouse","2014-2015",2014,720
+"Trysil","Black grouse","2015-2016",2015,120
+"Trysil","Black grouse","2016-2017",2016,370
+"Trysil","Black grouse","2017-2018",2017,650
+"Trysil","Black grouse","2018-2019",2018,1050
+"Trysil","Willow ptarmigan","2008-2009",2008,2100
+"Trysil","Willow ptarmigan","2009-2010",2009,1300
+"Trysil","Willow ptarmigan","2010-2011",2010,2400
+"Trysil","Willow ptarmigan","2011-2012",2011,2550
+"Trysil","Willow ptarmigan","2012-2013",2012,500
+"Trysil","Willow ptarmigan","2013-2014",2013,1000
+"Trysil","Willow ptarmigan","2014-2015",2014,950
+"Trysil","Willow ptarmigan","2015-2016",2015,100
+"Trysil","Willow ptarmigan","2016-2017",2016,450
+"Trysil","Willow ptarmigan","2017-2018",2017,1000
+"Trysil","Willow ptarmigan","2018-2019",2018,2100
+"Trysil","Rock ptarmigan","2008-2009",2008,200
+"Trysil","Rock ptarmigan","2009-2010",2009,150
+"Trysil","Rock ptarmigan","2010-2011",2010,250
+"Trysil","Rock ptarmigan","2011-2012",2011,300
+"Trysil","Rock ptarmigan","2012-2013",2012,
+"Trysil","Rock ptarmigan","2013-2014",2013,150
+"Trysil","Rock ptarmigan","2014-2015",2014,150
+"Trysil","Rock ptarmigan","2015-2016",2015,
+"Trysil","Rock ptarmigan","2016-2017",2016,
+"Trysil","Rock ptarmigan","2017-2018",2017,100
+"Trysil","Rock ptarmigan","2018-2019",2018,200
+"Oppdal","Capercaillie","2008-2009",2008,
+"Oppdal","Capercaillie","2009-2010",2009,
+"Oppdal","Capercaillie","2010-2011",2010,
+"Oppdal","Capercaillie","2011-2012",2011,
+"Oppdal","Capercaillie","2012-2013",2012,
+"Oppdal","Capercaillie","2013-2014",2013,
+"Oppdal","Capercaillie","2014-2015",2014,
+"Oppdal","Capercaillie","2015-2016",2015,
+"Oppdal","Capercaillie","2016-2017",2016,
+"Oppdal","Capercaillie","2017-2018",2017,
+"Oppdal","Capercaillie","2018-2019",2018,20
+"Oppdal","Black grouse","2008-2009",2008,50
+"Oppdal","Black grouse","2009-2010",2009,30
+"Oppdal","Black grouse","2010-2011",2010,
+"Oppdal","Black grouse","2011-2012",2011,30
+"Oppdal","Black grouse","2012-2013",2012,
+"Oppdal","Black grouse","2013-2014",2013,
+"Oppdal","Black grouse","2014-2015",2014,
+"Oppdal","Black grouse","2015-2016",2015,
+"Oppdal","Black grouse","2016-2017",2016,
+"Oppdal","Black grouse","2017-2018",2017,
+"Oppdal","Black grouse","2018-2019",2018,20
+"Oppdal","Willow ptarmigan","2008-2009",2008,3100
+"Oppdal","Willow ptarmigan","2009-2010",2009,1950
+"Oppdal","Willow ptarmigan","2010-2011",2010,2250
+"Oppdal","Willow ptarmigan","2011-2012",2011,2850
+"Oppdal","Willow ptarmigan","2012-2013",2012,1050
+"Oppdal","Willow ptarmigan","2013-2014",2013,1700
+"Oppdal","Willow ptarmigan","2014-2015",2014,1600
+"Oppdal","Willow ptarmigan","2015-2016",2015,200
+"Oppdal","Willow ptarmigan","2016-2017",2016,1250
+"Oppdal","Willow ptarmigan","2017-2018",2017,1300
+"Oppdal","Willow ptarmigan","2018-2019",2018,1750
+"Oppdal","Rock ptarmigan","2008-2009",2008,1150
+"Oppdal","Rock ptarmigan","2009-2010",2009,800
+"Oppdal","Rock ptarmigan","2010-2011",2010,850
+"Oppdal","Rock ptarmigan","2011-2012",2011,950
+"Oppdal","Rock ptarmigan","2012-2013",2012,300
+"Oppdal","Rock ptarmigan","2013-2014",2013,850
+"Oppdal","Rock ptarmigan","2014-2015",2014,850
+"Oppdal","Rock ptarmigan","2015-2016",2015,150
+"Oppdal","Rock ptarmigan","2016-2017",2016,750
+"Oppdal","Rock ptarmigan","2017-2018",2017,900
+"Oppdal","Rock ptarmigan","2018-2019",2018,700
+"Rana","Capercaillie","2008-2009",2008,60
+"Rana","Capercaillie","2009-2010",2009,100
+"Rana","Capercaillie","2010-2011",2010,90
+"Rana","Capercaillie","2011-2012",2011,60
+"Rana","Capercaillie","2012-2013",2012,30
+"Rana","Capercaillie","2013-2014",2013,
+"Rana","Capercaillie","2014-2015",2014,40
+"Rana","Capercaillie","2015-2016",2015,
+"Rana","Capercaillie","2016-2017",2016,20
+"Rana","Capercaillie","2017-2018",2017,30
+"Rana","Capercaillie","2018-2019",2018,40
+"Rana","Black grouse","2008-2009",2008,80
+"Rana","Black grouse","2009-2010",2009,110
+"Rana","Black grouse","2010-2011",2010,90
+"Rana","Black grouse","2011-2012",2011,100
+"Rana","Black grouse","2012-2013",2012,30
+"Rana","Black grouse","2013-2014",2013,
+"Rana","Black grouse","2014-2015",2014,50
+"Rana","Black grouse","2015-2016",2015,
+"Rana","Black grouse","2016-2017",2016,20
+"Rana","Black grouse","2017-2018",2017,30
+"Rana","Black grouse","2018-2019",2018,50
+"Rana","Willow ptarmigan","2008-2009",2008,2050
+"Rana","Willow ptarmigan","2009-2010",2009,1800
+"Rana","Willow ptarmigan","2010-2011",2010,2350
+"Rana","Willow ptarmigan","2011-2012",2011,4800
+"Rana","Willow ptarmigan","2012-2013",2012,1450
+"Rana","Willow ptarmigan","2013-2014",2013,2050
+"Rana","Willow ptarmigan","2014-2015",2014,3250
+"Rana","Willow ptarmigan","2015-2016",2015,900
+"Rana","Willow ptarmigan","2016-2017",2016,1600
+"Rana","Willow ptarmigan","2017-2018",2017,2100
+"Rana","Willow ptarmigan","2018-2019",2018,2150
+"Rana","Rock ptarmigan","2008-2009",2008,1350
+"Rana","Rock ptarmigan","2009-2010",2009,800
+"Rana","Rock ptarmigan","2010-2011",2010,1600
+"Rana","Rock ptarmigan","2011-2012",2011,3400
+"Rana","Rock ptarmigan","2012-2013",2012,1050
+"Rana","Rock ptarmigan","2013-2014",2013,1300
+"Rana","Rock ptarmigan","2014-2015",2014,2500
+"Rana","Rock ptarmigan","2015-2016",2015,950
+"Rana","Rock ptarmigan","2016-2017",2016,1300
+"Rana","Rock ptarmigan","2017-2018",2017,1800
+"Rana","Rock ptarmigan","2018-2019",2018,1700
+"Alta","Capercaillie","2008-2009",2008,0
+"Alta","Capercaillie","2009-2010",2009,0
+"Alta","Capercaillie","2010-2011",2010,0
+"Alta","Capercaillie","2011-2012",2011,0
+"Alta","Capercaillie","2012-2013",2012,0
+"Alta","Capercaillie","2013-2014",2013,0
+"Alta","Capercaillie","2014-2015",2014,
+"Alta","Capercaillie","2015-2016",2015,0
+"Alta","Capercaillie","2016-2017",2016,
+"Alta","Capercaillie","2017-2018",2017,0
+"Alta","Capercaillie","2018-2019",2018,
+"Alta","Black grouse","2008-2009",2008,
+"Alta","Black grouse","2009-2010",2009,0
+"Alta","Black grouse","2010-2011",2010,0
+"Alta","Black grouse","2011-2012",2011,0
+"Alta","Black grouse","2012-2013",2012,0
+"Alta","Black grouse","2013-2014",2013,0
+"Alta","Black grouse","2014-2015",2014,0
+"Alta","Black grouse","2015-2016",2015,0
+"Alta","Black grouse","2016-2017",2016,
+"Alta","Black grouse","2017-2018",2017,
+"Alta","Black grouse","2018-2019",2018,
+"Alta","Willow ptarmigan","2008-2009",2008,1400
+"Alta","Willow ptarmigan","2009-2010",2009,1350
+"Alta","Willow ptarmigan","2010-2011",2010,1000
+"Alta","Willow ptarmigan","2011-2012",2011,2150
+"Alta","Willow ptarmigan","2012-2013",2012,950
+"Alta","Willow ptarmigan","2013-2014",2013,1500
+"Alta","Willow ptarmigan","2014-2015",2014,2300
+"Alta","Willow ptarmigan","2015-2016",2015,4350
+"Alta","Willow ptarmigan","2016-2017",2016,2300
+"Alta","Willow ptarmigan","2017-2018",2017,750
+"Alta","Willow ptarmigan","2018-2019",2018,1100
+"Alta","Rock ptarmigan","2008-2009",2008,1100
+"Alta","Rock ptarmigan","2009-2010",2009,1200
+"Alta","Rock ptarmigan","2010-2011",2010,1200
+"Alta","Rock ptarmigan","2011-2012",2011,2100
+"Alta","Rock ptarmigan","2012-2013",2012,1100
+"Alta","Rock ptarmigan","2013-2014",2013,1400
+"Alta","Rock ptarmigan","2014-2015",2014,2200
+"Alta","Rock ptarmigan","2015-2016",2015,3250
+"Alta","Rock ptarmigan","2016-2017",2016,2050
+"Alta","Rock ptarmigan","2017-2018",2017,900
+"Alta","Rock ptarmigan","2018-2019",2018,1100
+"Kautokeino","Capercaillie","2008-2009",2008,
+"Kautokeino","Capercaillie","2009-2010",2009,0
+"Kautokeino","Capercaillie","2010-2011",2010,0
+"Kautokeino","Capercaillie","2011-2012",2011,0
+"Kautokeino","Capercaillie","2012-2013",2012,0
+"Kautokeino","Capercaillie","2013-2014",2013,0
+"Kautokeino","Capercaillie","2014-2015",2014,
+"Kautokeino","Capercaillie","2015-2016",2015,
+"Kautokeino","Capercaillie","2016-2017",2016,0
+"Kautokeino","Capercaillie","2017-2018",2017,0
+"Kautokeino","Capercaillie","2018-2019",2018,0
+"Kautokeino","Black grouse","2008-2009",2008,
+"Kautokeino","Black grouse","2009-2010",2009,0
+"Kautokeino","Black grouse","2010-2011",2010,0
+"Kautokeino","Black grouse","2011-2012",2011,
+"Kautokeino","Black grouse","2012-2013",2012,0
+"Kautokeino","Black grouse","2013-2014",2013,0
+"Kautokeino","Black grouse","2014-2015",2014,
+"Kautokeino","Black grouse","2015-2016",2015,70
+"Kautokeino","Black grouse","2016-2017",2016,
+"Kautokeino","Black grouse","2017-2018",2017,0
+"Kautokeino","Black grouse","2018-2019",2018,
+"Kautokeino","Willow ptarmigan","2008-2009",2008,4550
+"Kautokeino","Willow ptarmigan","2009-2010",2009,3700
+"Kautokeino","Willow ptarmigan","2010-2011",2010,2550
+"Kautokeino","Willow ptarmigan","2011-2012",2011,4250
+"Kautokeino","Willow ptarmigan","2012-2013",2012,3100
+"Kautokeino","Willow ptarmigan","2013-2014",2013,4050
+"Kautokeino","Willow ptarmigan","2014-2015",2014,5350
+"Kautokeino","Willow ptarmigan","2015-2016",2015,12050
+"Kautokeino","Willow ptarmigan","2016-2017",2016,7250
+"Kautokeino","Willow ptarmigan","2017-2018",2017,1750
+"Kautokeino","Willow ptarmigan","2018-2019",2018,4600
+"Kautokeino","Rock ptarmigan","2008-2009",2008,300
+"Kautokeino","Rock ptarmigan","2009-2010",2009,250
+"Kautokeino","Rock ptarmigan","2010-2011",2010,150
+"Kautokeino","Rock ptarmigan","2011-2012",2011,250
+"Kautokeino","Rock ptarmigan","2012-2013",2012,150
+"Kautokeino","Rock ptarmigan","2013-2014",2013,200
+"Kautokeino","Rock ptarmigan","2014-2015",2014,250
+"Kautokeino","Rock ptarmigan","2015-2016",2015,500
+"Kautokeino","Rock ptarmigan","2016-2017",2016,250
+"Kautokeino","Rock ptarmigan","2017-2018",2017,
+"Kautokeino","Rock ptarmigan","2018-2019",2018,100

@@ -1,0 +1,349 @@
+---
+title: "From forest to mountain: grouse in the hunting bag"
+subtitle: "Four species, six Norwegian municipalities, and the limits of harvest data"
+author: "Yiyao"
+lang: en
+bibliography: references.bib
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-title: "In this report"
+    toc-depth: 2
+    embed-resources: true
+    title-block-banner: "#173E49"
+    title-block-banner-color: "#FFFFFF"
+    html-math-method: plain
+execute:
+  echo: false
+  warning: false
+  message: false
+  cache: false
+---
+
+```{r}
+#| label: load-results
+#| include: false
+data <- targets::tar_read(cleaned_data)
+summary_table <- targets::tar_read(summary_table)
+land <- targets::tar_read(land_context)
+comparison <- targets::tar_read(habitat_table)
+figure_path <- targets::tar_read(figure)
+comparison_figure_path <- targets::tar_read(comparison_figure)
+forest_figure_path <- targets::tar_read(forest_figure)
+map_path <- targets::tar_read(study_map)
+cleaned_path <- targets::tar_read(cleaned_csv)
+summary_path <- targets::tar_read(summary_csv)
+comparison_path <- targets::tar_read(habitat_csv)
+observed <- sum(!is.na(data$harvest))
+missing <- sum(is.na(data$harvest))
+forest_at <- function(site) {
+  round(
+    land$forest_pct[land$municipality == site],
+    digits = 1
+  )
+}
+
+conifer_at <- function(site) {
+  round(
+    land$conifer_pct[land$municipality == site],
+    digits = 1
+  )
+}
+
+mean_at <- function(site, bird) {
+  selected <- summary_table$municipality == site &
+    summary_table$species == bird
+
+  round(summary_table$mean_harvest[selected])
+}
+```
+
+## Question and motivation
+
+**Do harvest patterns differ between forest-associated grouse and ptarmigan
+across contrasting Norwegian landscapes?** This exploratory study compares
+four species in six municipalities during hunting years 2008–2009 through
+2018–2019, using a location map and official land cover statistics to give
+the harvest records ecological context.
+
+The species provide a useful contrast, but they are not interchangeable
+habitat indicators. Capercaillie is associated with older forest, whereas
+black grouse often uses earlier successional habitats [@gregersen2009].
+Willow ptarmigan uses shrub rich subalpine and tundra habitats; Norwegian
+field studies found selection near the treeline and for relatively rich
+vegetation [@kvasnes2018]. Rock ptarmigan (Lagopus muta) is primarily 
+associated with rocky habitats in high-alpine and high-Arctic tundra [@henden2017].
+
+Thus, the motivating expectation is a change in the mix of harvested species
+across forest and open upland settings, rather than a uniform north–south trend.
+
+::: {.callout-note appearance="simple"}
+## Scope
+4 species · 6 municipalities · 11 hunting years · `r observed` observed values ·
+`r missing` missing values. This is a comparison of published harvests, not a
+survey of bird abundance or a test of what causes population change.
+:::
+
+## Where, and why these places?
+
+The six cases span southern forest landscapes, central mountains and northern
+coastal/inland settings. They were chosen for a compact geographical contrast
+after initial data inspection, not by random sampling or a pre-registered
+selection rule. They cannot represent Norway as a whole.
+
+| Municipality | Role in the comparison |
+|---|---|
+| Kongsberg | Southern case with extensive conifer forest |
+| Trysil | Southeastern forest–upland mosaic; contrasts with Kongsberg |
+| Oppdal | Central mountain case with relatively little forest |
+| Rana | Northern coastal-to-mountain case |
+| Alta | Far-northern fjord–upland case |
+| Kautokeino | Far-northern inland plateau; contrasts with Alta |
+
+```{r}
+#| label: fig-map
+#| fig-cap: "The six study municipalities over a Norway elevation background. Points are official points within municipalities, not bird observations or hunting locations. Point colour shows conifer forest as a percentage of terrestrial area in 2018. The background shows elevation, coarsened to a 5 km display grid; neighbouring countries have no elevation layer. Municipal boundaries are not shown. Projection: ETRS89 / LAEA Europe. Sources: © Kartverket (CC BY 4.0), SSB table 09594 (CC BY 4.0), Natural Earth v5.1.2 (public domain), and DIVA-GIS elevation (CIAT SRTM: Jarvis et al., 2008; USGS GTOPO30)."
+#| fig-alt: "Map locating six municipalities with labels beside their points. Elevation shading shows Norway's mountains and plateaus; a separate point colour scale shows municipal conifer forest percentages."
+#| out-width: "90%"
+knitr::include_graphics(map_path)
+```
+
+land cover measurements support the intended contrast: conifer forest covers
+`r conifer_at("Kongsberg")`% of Kongsberg and `r conifer_at("Trysil")`% of Trysil,
+compared with `r conifer_at("Oppdal")`% of Oppdal. Forest type also matters:
+Kautokeino has `r forest_at("Kautokeino")`% total forest but only
+`r conifer_at("Kautokeino")`% conifer forest. Total forest cover alone is
+therefore a coarse description of habitat for these birds.
+
+## Data and analysis
+
+**Harvests.** The local source is an extract of the course file `smallGame.RDS`.
+All 264 selected cells, including their missing status, were checked against
+[SSB table 07514](https://www.ssb.no/en/statbank1/table/07514) on 23 October 2026.
+The original label “Ptarmigan” is displayed here as “Rock ptarmigan”. A hunting
+year runs from 1 April to 31 March; 2018 on the figure means 2018–2019.
+We retain the original period to avoid extending across the extensive 2020
+municipality changes. Oppdal's 2018 code change is explicitly documented in
+`data/README.md` and was handled during source verification.
+
+**Environment and location.** [SSB table 09594](https://www.ssb.no/en/statbank1/table/09594)
+provides 2018 land cover areas. Forest percentages use terrestrial area,
+excluding inland and marine water; nested forest subclasses are not counted
+twice. This single snapshot gives landscape context, not a reconstruction of
+habitat during every hunting year. SSB warns that changes in mapping coverage
+prevent simple comparisons of this table across years. Map positions come
+from [Kartverket's municipality API](https://ws.geonorge.no/kommuneinfo/v1/),
+with a [Natural Earth](https://www.naturalearthdata.com/) reference map.
+The Norway elevation raster is distributed by
+[DIVA-GIS / UC Davis](https://geodata.ucdavis.edu/diva/msk_alt/).
+The 30-arc-second product combines SRTM with GTOPO30 at northern latitudes;
+see the [elevation documentation](https://rspatial.github.io/geodata/reference/elevation.html).
+We aggregate and project it to a 5 km grid for the national overview. It is a
+terrain background, not a municipal mean elevation or a measurement of hunted
+habitat. **Conifer forest percentage** is the municipal environmental parameter
+used for the quantitative comparison below.
+Inputs are cached in the project. A fresh clone downloads the elevation file
+once from its provider; subsequent runs require no data downloads.
+
+**Cleaning and summaries.** `clean_data()` reshapes the 44 source rows into
+264 municipality–species–year observations, standardises labels, and validates
+identifiers, non-negative harvests and unique records. Missing values are
+retained, not replaced with zero. The table reports each mean together with
+the number of available years. An entirely missing series has no mean.
+Because missingness may reflect suppression or non-availability, means over
+different sets of years may not be directly comparable.
+
+We plot annual records and describe the patterns. No significance tests, 
+population trend model or causal regression is fitted to these six selected 
+municipalities. Municipal area, hunting effort and habitat availability 
+differ; raw totals are neither densities nor effort-standardised harvest rates.
+
+## What the data show
+
+```{r}
+#| label: tbl-comparison
+#| tbl-cap: "land cover context and mean annual harvest (birds), 2008–2009 to 2018–2019. Parentheses give observed years out of 11; NA means no observations. Forest percentages refer to terrestrial area in 2018. Willow and Rock denote the two ptarmigan species. Means with different coverage require caution."
+knitr::kable(
+  comparison,
+  col.names = c(
+    "Municipality",
+    "Forest (%)",
+    "Conifer (%)",
+    "Capercaillie",
+    "Black grouse",
+    "Willow",
+    "Rock"
+  ),
+  digits = 1,
+  align = c("l", "r", "r", "r", "r", "r", "r")
+)
+```
+
+```{r}
+#| label: fig-comparison
+#| fig-cap: "Mean annual harvest by species and municipality. All four panels use the same linear horizontal scale, so distances are directly comparable. Labels give the mean and observed years out of 11. Missing series are labelled NA with no point; reported zeros have a point at zero. Unequal coverage limits comparisons of means. Source: SSB table 07514 (CC BY 4.0)."
+#| fig-alt: "Four dot plots share a scale from zero to 6500 birds. Kautokeino's willow ptarmigan mean is largest. Every dot has a numerical mean and coverage label."
+#| out-width: "100%"
+knitr::include_graphics(comparison_figure_path)
+```
+
+**The mix of harvests differs among landscapes.** In Trysil, all 11 years are
+available for capercaillie, black grouse and willow ptarmigan, with means of
+`r mean_at("Trysil", "Capercaillie")`, `r mean_at("Trysil", "Black grouse")`
+and `r mean_at("Trysil", "Willow ptarmigan")` birds per year, respectively.
+This mixed harvest is consistent with a municipality containing both forest
+and upland environments. In Kautokeino, willow ptarmigan averages
+`r mean_at("Kautokeino", "Willow ptarmigan")` birds across 11 observed years.
+Rana and Alta also have substantial rock ptarmigan harvests: means of
+`r mean_at("Rana", "Rock ptarmigan")` and `r mean_at("Alta", "Rock ptarmigan")`
+birds, both with complete coverage.
+
+**Missing does not mean absent.** Kongsberg has no available willow ptarmigan
+values in this extract. That prevents a quantitative comparison of its willow
+ptarmigan harvest; it does not demonstrate that the species is absent.
+The table's observed year counts are part of the result, not just a technical
+detail. The same caution applies to incomplete forest-grouse series farther north.
+
+### Does conifer forest cover help explain the spatial contrast?
+
+Conifer forest percentage is a biologically motivated habitat descriptor for
+the two forest associated species. It describes the municipality as a whole,
+whereas the elevation at a map point would describe only that one location.
+It is still a coarse proxy: black grouse also uses open and early successional
+habitats, and neither species responds to forest percentage alone.
+
+```{r}
+#| label: fig-forest
+#| fig-cap: "Conifer forest percentage versus mean annual forest-grouse harvest. Both panels share the same axes. Numbers identify municipalities using the key below the figure. Filled points have all 11 hunting years; open points have incomplete coverage (see Table 1). Leader lines connect displaced number labels to their observations. This is a descriptive comparison of six selected municipalities, not an estimated causal effect. Sources: SSB tables 07514 and 09594 (CC BY 4.0)."
+#| fig-alt: "Two scatterplots show generally larger forest-grouse harvests in the two conifer-rich municipalities, but Trysil has much higher harvest than Kongsberg despite lower conifer cover."
+#| out-width: "100%"
+knitr::include_graphics(forest_figure_path)
+```
+
+The two conifer rich cases, Kongsberg and Trysil, have larger mean harvests of
+both forest species than the four other cases. However, **more conifer cover
+does not consistently mean more harvest**: Kongsberg has a higher conifer
+percentage than Trysil, yet lower harvests of both species. This contrast
+supports investigating habitat while showing why cover alone is insufficient.
+Municipal area, forest structure, hunting effort and incomplete observations
+remain alternative explanations. The environmental parameter was chosen for
+its ecological relevance, not by screening predictors for a significant result.
+
+### Annual variation on a common scale
+
+The annual panels below share one vertical scale. A peak of the same height
+therefore represents the same number of birds in every municipality. Smaller
+series are visually compressed by the large Kautokeino peak; the mean harvest
+dot plot above provides labelled values for the broader spatial comparison.
+
+```{r}
+#| label: fig-harvest
+#| fig-cap: "Annual harvest estimates for four grouse species. All six panels use the same linear vertical scale, allowing comparison of absolute totals. Missing values produce gaps and entirely missing series are not drawn. Explicit reported zeros remain zero. The horizontal axis gives the hunting year's starting year. Source: SSB table 07514 (CC BY 4.0)."
+#| fig-alt: "Six panels show four grouse harvest series. Species composition differs between municipalities, and ptarmigan harvests fluctuate across years. Missing records are retained as gaps."
+#| out-width: "100%"
+knitr::include_graphics(figure_path)
+```
+
+## Interpretation in light of the literature
+
+The spatial contrast is **consistent with habitat differences**, but this
+analysis does not establish that forest cover or terrain caused the harvest
+patterns. The studies below help frame plausible mechanisms and identify the
+measurements that are missing from this coursework dataset.
+
+**Habitat composition and forest structure.** Gregersen and Gregersen
+[@gregersen2009] examined longer Norwegian harvest records and discussed
+species specific habitat requirements, forestry and climate. Their work
+supports distinguishing capercaillie from black grouse rather than treating
+all forest birds as one ecological response. Our forest percentages contain
+no information on stand age, management, understory or the places actually hunted.
+
+**Vegetation and terrain.** Kvasnes and colleagues [@kvasnes2018] used Norwegian
+field observations and environmental predictors to identify willow ptarmigan
+habitat selection near the treeline, in richer vegetation and on intermediate
+slopes. This gives a biological basis for contrasting forest and mountain
+settings. Our municipal land cover summaries are much coarser: a map point is
+not a measured habitat, and the elevation background has not been summarised
+over municipal boundaries or hunting locations. We have not analysed slope or
+treeline distance. The map therefore motivates a hypothesis rather than
+testing a topographic mechanism.
+
+**Annual fluctuations and food webs.** Hjeljord and Loe [@hjeljord2022] analysed
+a 142-year series of willow ptarmigan catch per unit effort. Rodent peaks and
+spring/early-summer atmospheric conditions helped explain variation; the
+authors could not directly attribute the long-term decline to climate change.
+Predator–prey dynamics and weather are therefore plausible explanations worth
+investigating, but the shorter harvest series here contain no rodent, predator
+or weather measurements. We cannot assign an individual peak or trough to them.
+
+**Hunters are part of the measurement process.** Andersen and Kaltenborn
+[@andersen2013] found no simple linear relationship between seasonal catch per
+unit effort and independently estimated willow ptarmigan density in their
+study. Hunting technique, effort, experience and accessibility mattered.
+Our unstandardised totals provide even less control for these influences.
+Reporting, harvest restrictions and SSB estimation also affect the records;
+see [SSB's methods](https://www.ssb.no/en/jord-skog-jakt-og-fiskeri/jakt/statistikk/smavilt-og-radyrjakt).
+
+The defensible conclusion is that these selected municipalities show different
+harvest compositions alongside a clear contrast in forest type and coverage.
+The pattern is ecologically interpretable, while incomplete records and
+unmeasured hunting activity limit stronger conclusions. A next study should
+combine standardised bird surveys, hunting days, regulations and habitat
+measurements at matched spatial scales before estimating causal effects.
+
+## Reproducibility and editing
+
+The `targets` pipeline tracks source CSVs, the map file, cleaning, summaries,
+four figures and this Quarto report. `renv.lock` records package versions;
+Quarto is installed separately. See `README.md` for the Windows/VS Code setup.
+The GitHub repository has not been published.
+
+::: {.callout-tip appearance="simple"}
+Edit the ordinary paragraphs in `report.qmd`, save the file, then run
+`Rscript -e 'targets::tar_make()'` in the VS Code PowerShell terminal at the
+project root. Reopen or refresh `report.html`. Generated numbers come from R
+code; do not replace them by hand. See `EDITING.md` for a short walkthrough.
+:::
+
+<details>
+<summary>Software used to render this report</summary>
+
+```{r}
+cat(R.version.string, "\n")
+cat("Quarto", as.character(quarto::quarto_version()), "\n\n")
+packages <- c(
+  "targets",
+  "tarchetypes",
+  "renv",
+  "dplyr",
+  "tidyr",
+  "ggplot2",
+  "sf",
+  "terra",
+  "quarto",
+  "knitr",
+  "rmarkdown"
+)
+
+versions <- vapply(
+  packages,
+  function(package) {
+    as.character(utils::packageVersion(package))
+  },
+  character(1)
+)
+
+knitr::kable(
+  data.frame(Package = packages, Version = versions),
+  row.names = FALSE
+)
+```
+
+</details>
+
+## References
+
+::: {#refs}
+:::

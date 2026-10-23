@@ -1,0 +1,25 @@
+"municipality","species","years_observed","years_missing","mean_harvest","min_harvest","max_harvest"
+"Kongsberg","Capercaillie",11,0,111.818181818182,80,160
+"Kongsberg","Black grouse",11,0,340,180,530
+"Kongsberg","Willow ptarmigan",0,11,,,
+"Kongsberg","Rock ptarmigan",3,8,0,0,0
+"Trysil","Capercaillie",11,0,828.181818181818,140,1790
+"Trysil","Black grouse",11,0,992.727272727273,120,2350
+"Trysil","Willow ptarmigan",11,0,1313.63636363636,100,2550
+"Trysil","Rock ptarmigan",8,3,187.5,100,300
+"Oppdal","Capercaillie",1,10,20,20,20
+"Oppdal","Black grouse",4,7,32.5,20,50
+"Oppdal","Willow ptarmigan",11,0,1727.27272727273,200,3100
+"Oppdal","Rock ptarmigan",11,0,750,150,1150
+"Rana","Capercaillie",9,2,52.2222222222222,20,100
+"Rana","Black grouse",9,2,62.2222222222222,20,110
+"Rana","Willow ptarmigan",11,0,2227.27272727273,900,4800
+"Rana","Rock ptarmigan",11,0,1613.63636363636,800,3400
+"Alta","Capercaillie",8,3,0,0,0
+"Alta","Black grouse",7,4,0,0,0
+"Alta","Willow ptarmigan",11,0,1740.90909090909,750,4350
+"Alta","Rock ptarmigan",11,0,1600,900,3250
+"Kautokeino","Capercaillie",8,3,0,0,0
+"Kautokeino","Black grouse",6,5,11.6666666666667,0,70
+"Kautokeino","Willow ptarmigan",11,0,4836.36363636364,1750,12050
+"Kautokeino","Rock ptarmigan",10,1,240,100,500

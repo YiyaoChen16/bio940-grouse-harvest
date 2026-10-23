@@ -1,0 +1,22 @@
+body {
+  color: #25383f;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.65;
+}
+
+#title-block-header .quarto-title-banner {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+h1, h2, h3 { font-weight: 650; }
+h2 { color: #173e49; margin-top: 2rem; }
+a { color: #147387; }
+.subtitle { opacity: 0.92; }
+figure { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+figcaption, .figure-caption { color: #52656b; line-height: 1.5; }
+.table { font-size: 0.92rem; }
+.table thead { border-bottom: 2px solid #147d92; }
+.callout { border-radius: 4px; }
+.session-details { margin-top: 1.5rem; font-size: 0.9rem; }
+summary { cursor: pointer; font-weight: 600; }
